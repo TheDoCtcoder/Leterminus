@@ -1,0 +1,571 @@
+body {
+  width: 100%;
+  background: beige;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  background-color: #f0efec;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 400 to 700 */
+
+.lora-standard {
+  font-family: "Lora", serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400;
+  font-style: normal; */
+
+}
+
+
+
+.montserrat-standard {
+  font-family: "Montserrat", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+.tel img {
+  width: 18px;
+  color: #d6aa47;
+}
+
+.maps img {
+  margin-top: 14px;
+  width: 48px;
+  color: #d6aa47;
+
+}
+
+.margedroite {
+  margin-right: 20px;
+}
+
+.margedroite2 {
+  margin-right: 8px;
+}
+
+
+.espace {
+  color: #e7e5e1;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.header1 {
+  z-index: 5;
+  width: 100%;
+  height: 150px;
+  position: fixed;
+}
+
+.entete {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+}
+
+.sousentete {
+  color: #cccccc;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 30px;
+  font-size: 13px;
+}
+
+.entete div {
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+}
+
+.navigation {
+  width: 100%;
+  height: 120px;
+  background-color: #323233
+}
+
+
+.corps {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.corps div {
+
+  width: 50%;
+  height: 390px;
+  background-color: #7a7777;
+
+}
+
+.corps div.second {
+
+  padding-top: 30px;
+  font-weight: 700;
+  width: 50%;
+  height: 390px;
+  background-color: #323332;
+}
+
+.second p {
+  line-height: 16px;
+  vertical-align: baseline;
+  letter-spacing: 4px;
+  word-spacing: 0px;
+  font-size: 16px;
+  color: #ffffec;
+}
+
+
+
+
+.imageentete img {
+
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.imageentete {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 560px;
+
+}
+
+.containerimage {
+  padding-top: 150px;
+  width: 100%;
+  position: relative;
+  height: 560px;
+  margin-bottom: 230px;
+
+
+}
+
+.milieu {
+  min-width: 380px;
+  position: absolute;
+  z-index: 4;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20%;
+  height: 210px;
+
+}
+
+.milieu div {
+  color: #f0efec;
+  padding-top: 26px;
+  background-color: #d6aa47;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 4px;
+}
+
+div.last {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fffefc;
+  background-color: rgba(214, 170, 71, 0.8);
+  line-height: 20px;
+  vertical-align: baseline;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+}
+
+.sous-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1170px;
+  margin: 0 auto;
+  height: 120px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+
+}
+
+.sous-navigation img {
+
+  width: 300px;
+  height: 90px;
+
+}
+
+H1 {
+  /* padding-top: 20px; */
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px 0 0;
+  line-height: 37.4px;
+  color: #e7e5e1;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+p.parag {
+  margin: 0 auto;
+  width: 82%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  word-spacing: 0px;
+  font-style: normal;
+  letter-spacing: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(204, 204, 204);
+  text-indent: 0px;
+
+}
+
+div.ligne {
+  margin: 0 auto;
+  width: 50px;
+  height: 3px;
+  background-color: #d6aa47;
+  margin-bottom: 15px;
+}
+
+div.ligne2 {
+  margin-top: 15PX;
+  width: 50px;
+  height: 3px;
+  background-color: #d6aa47;
+  margin-bottom: 25px;
+}
+
+.centrage img {
+  margin: 0 auto;
+
+}
+
+div.centrage {
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+/* scrool bouton */
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 16px;
+  right: 20px;
+  display: none;
+  background-color: #282e35;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #1a1c1e;
+}
+
+/* fin scroll bouton */
+
+
+
+div.gomaps {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+}
+
+p#adresse {
+  margin-top: 80px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+  vertical-align: baseline;
+  letter-spacing: 4px;
+  word-spacing: 0px;
+}
+
+p#noustrouver {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 34px;
+font-weight:700;
+font-style:normal;
+font-variant:normal;
+text-transform:uppercase;
+text-decoration:none solid rgb(20, 20, 20);
+text-align:center;
+text-indent:0px;
+line-height:37.4px;
+vertical-align:baseline;
+letter-spacing:normal;
+word-spacing:0px;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  background-color: #d7aa46;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .g {
+  width: 30%;
+  height: 150px;
+  background-color: #d7aa46;
+} */
+.d {
+  /* justify-content: center; */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 150px;
+  background-color: #deba6d;
+color: #ffffff;
+line-height:34.2857px;
+vertical-align:baseline;
+letter-spacing:1px;
+word-spacing:0px;
+text-align: center;
+font-size: 24px;
+
+}
+
+.d span {
+  margin-top: 0;
+  display: block;
+  width: 50px;
+}
+/* .e {
+  width: 30%;
+  height: 150px;
+  background-color: #d7aa46;
+} */
+
+p#contactgauche {
+  width: 32%;
+  margin-left: 100px;
+color: #ffffff;
+line-height:34.2857px;
+vertical-align:middle;
+letter-spacing:normal;
+word-spacing:0px;
+font-weight:400;
+font-style:normal;
+font-variant:normal;
+text-transform:none;
+text-decoration:none solid rgb(255, 255, 255);
+text-align:right;
+text-indent:0px;
+font-size:24px;
+}
+
+
+.rappel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  font-size: 34px;
+  font-weight: 400;
+  color: #999898;
+  background-color: #333333;
+  width: 100%;
+
+}
+
+.black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 360px;
+  background-color: #141414;
+}
+
+.black > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  width: 1170px;
+  height: 360px;
+
+}
+
+
+
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  color: #e0e0e0;
+  width: 330px;
+  height: 280px;
+  padding-top: 50PX;
+  margin-left: 50px;
+}
+
+.apropos div p {
+  line-height: 30px;
+  align-items: center;
+  display: flex;
+}
+.apropos div p span {
+  margin-right: 8px;
+ 
+}
+
+.apropos1 {
+  padding-top: 50PX;
+  display: flex;
+  flex-direction: column;
+  color: #e0e0e0;
+  width: 500px;
+  height: 280px;
+  margin-left: 50px;
+}
+
+.apropos h2 {
+  color: white;
+  font-size: 16px;
+}
+.apropos1 h2 {
+  color: white;
+  font-size: 16px;
+}
+
+.apropos p {
+  font-size: 14px;
+width: 360px;
+}
+
+
+.apropos1 p {
+  font-size: 14px;
+width: 360px;
+}
+
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  height: 60px;
+  background-color: #333333;
+}
+
+.contactcontainer {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separation {
+  text-align: center;
+  width: 20%;
+}
+
+.separation img {
+  width: 150px;
+}
